@@ -10,6 +10,7 @@ var intmin int32
 var intmax int32
 
 func main() {
+	fmt.Println("please enter 5 values to be compared: ")
 	var wg sync.WaitGroup
 	myslice := make([]int32, 0)
 	var input int32
@@ -58,3 +59,4 @@ func min(slice []int32, wg *sync.WaitGroup) {
 	}
 	intmin = out
 }
+
